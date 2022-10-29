@@ -23,7 +23,7 @@ export default {
       this.$router.push({ name });
     },
     add() {
-      this.$store.commit("increment11");
+      this.$store.commit("increment");
     },
     init() {
       let arr = [1, 2, 3, 3];

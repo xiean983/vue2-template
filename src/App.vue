@@ -1,12 +1,12 @@
 <template>
   <div  id="app">
     <h1>{{ text }}</h1>
-    <router-view />
+    <router-view></router-view>
     <Footer />
   </div>
 </template>
 <script>
-import Footer from "./components/Footer.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   data() {
     return {
@@ -19,6 +19,6 @@ export default {
   methods: {},
 };
 </script>
-<style lang="less">
+<style lang="scss">
 @import url("./assets/css/common.less");
 </style>

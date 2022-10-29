@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "dev": "webpack server --config ./build/webpack.dev.conf.js",
+    "build": "webpack --config ./build/webpack.prod.conf.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,20 +16,27 @@
     "@babel/runtime": "^7.19.4",
     "autoprefixer": "^10.4.12",
     "babel-loader": "^8.2.5",
+    "babel-plugin-component": "^1.1.1",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^4.2.2",
     "html-webpack-plugin": "^5.5.0",
     "less-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.6.1",
     "node-sass": "^7.0.3",
-    "postcss-loader": "^7.0.1",
+    "postcss": "^8.4.18",
+    "postcss-loader": "^3.0.0",
     "sass-loader": "^13.1.0",
     "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.6",
     "vue-loader": "^15.10.0",
     "vue-template-compiler": "^2.7.13",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "echarts": "^5.4.0",
+    "element-ui": "^2.15.10"
+  }
 }

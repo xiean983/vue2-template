@@ -11,24 +11,29 @@ export default new VueRouter({
         {
             name: 'pageA',
             path: '/pageA', 
-            component: () => import('../pages/pageA.vue'), 
+            component: () => import('@/pages/pageA.vue'), 
             children: [
                 {
                     name: 'pageB',
                     path: 'pageB', 
-                    component: () => import('../pages/pageB.vue')
+                    component: () => import('@/pages/pageB.vue')
                 },
                 {
                     name: 'pageC',
                     path: 'pageC', 
-                    component: () => import('../pages/pageC.vue')
+                    component: () => import('@/pages/pageC.vue')
                 }
             ]
         },
         {
             name: 'pageD',
             path: '/pageD', 
-            component: () => import('../pages/pageD.vue')
+            component: () => import('@/pages/pageD.vue')
+        },
+        {
+            name: 'echart',
+            path: '/echart', 
+            component: () => import('@/pages/Echart.vue')
         }
     ]
 })
