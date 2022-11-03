@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>pageA---12</h1>
-    <button @click="add">加1</button>
+    <el-button type="primary" @click="add">加1</el-button>
     <h2>vuex共享数据计数器的值：{{ count }}</h2>
   </div>
 </template>

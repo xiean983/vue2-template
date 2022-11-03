@@ -5,6 +5,7 @@ import store from './store'
 
 import echarts from '@/components/common/echart';
 import element from '@/components/common/element';
+// import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.prototype.$echarts = echarts  // 调用的时候就是 ：  this.$echarts
 Vue.use(element)
